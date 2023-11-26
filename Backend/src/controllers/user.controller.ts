@@ -79,7 +79,11 @@ export const getFavoriteList = async (req: any, res: any) => {
         if(!req.session.userID){
             throw {message:"userId is required, you are Unauthorized",status:401}
         }
-        const countFavoriteBooks = await favoriteBooks.count()
+        const countFavoriteBooks = await favoriteBooks.count({
+            where:{
+           userId: req.session.userID
+            }
+        })
         const result = await favoriteBooks.findMany({
             where: {
                 userId: req.session.userID,

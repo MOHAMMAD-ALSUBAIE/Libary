@@ -13,7 +13,6 @@ export const login = async (req, res, next) => {
         const user = await prisma.user.findFirst({
             where: { email },
         });
-        console.log(user)
         if (!user) {
             res.status(401).json({ message: "User not exist", isAuth: false });
             return;
@@ -58,7 +57,7 @@ export const login = async (req, res, next) => {
             userInformation: { name: user.name },
         });
     } catch (error) {
-        console.log(error);
+        res.status(400).json({ message: "Failed", isAuth: false });
     }
 };
 // const a = async () => {

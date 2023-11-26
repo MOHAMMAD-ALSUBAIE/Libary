@@ -10,7 +10,6 @@ RouterInstance.post("/login", login);
 //authorize user
 RouterInstance.get("/authorize", (req, res, next) => {
     if (req.session.isAuth) {
-        console.log(req.session);
         res.json({ massage: "you are already logged in", isAuth: true ,name:req.session["name"]});
         return;
     }
