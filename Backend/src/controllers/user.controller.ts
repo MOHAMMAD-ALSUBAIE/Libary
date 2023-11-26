@@ -5,6 +5,7 @@ const favoriteBooks = new PrismaClient().favoriteBooks;
 const session = new PrismaClient().session;
 
 import bcrypt from "bcrypt";
+import { error } from "console";
 
 export const createUser = async (req: any, res: any) => {
     try {
@@ -75,6 +76,10 @@ res.status(201).json({
 
 export const getFavoriteList = async (req: any, res: any) => {
     try {
+        if(!req.session.userID){
+            throw {message:"userId is required, you are Unauthorized",status:401}
+        }
+        const countFavoriteBooks = await favoriteBooks.count()
         const result = await favoriteBooks.findMany({
             where: {
                 userId: req.session.userID,
@@ -83,13 +88,19 @@ export const getFavoriteList = async (req: any, res: any) => {
          select: {
                     id: true,
                     userId: true,
-                    books:true
+                    books:true,
+                    
             },
-            
+                        
         });
-        res.status(200).json({ data: result });
+        res.status(200).json({ count:countFavoriteBooks,data: result });
     } catch (e) {
-        console.log(e);
+        console.log(e.name);
+        if(e.status===401)
+        res.status(401 ).json({status:401, massage: e.message });
+        else
+        res.status(400 ).json({status:400, massage: "filed" });
+
     }
 }
 
