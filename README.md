@@ -6,21 +6,26 @@ Libary is a web application that allows users to explore a curated collection of
 
 Features
 
-Book Catalog: Browse through a diverse catalog of books with detailed information sourced from Amazon.
-User Accounts: Every user must create an account to access the full features of the application.
-Authentication and Authorization: Secure user authentication and authorization mechanisms to protect user data and ensure a personalized experience.
-Favorite Bookshelf: Users can select their favorite books, adding them to a personalized bookshelf.
-CRUD Operations: Utilizing Prisma and MySQL for efficient CRUD operations on the book data.
+Book Catalog: Browse through a diverse catalog of books with detailed information sourced from Amazon.<br/>
+User Accounts: Every user must create an account to access the full features of the application.<br/>
+Authentication and Authorization: Secure user authentication and authorization mechanisms to protect user data and ensure a personalized experience.<br/>
+Favorite book: Users can select their favorite books.<br/>
+CRUD Operations: Utilizing Prisma and MySQL for efficient CRUD operations on the book data.<br/>
+
 Tech Stack
 
-Frontend:
-React: A JavaScript library for building user interfaces.
-Tailwind CSS: A utility-first CSS framework for rapid UI development.
+Frontend:<br/>
+React: A JavaScript library for building user interfaces.<br/>
+Tailwind CSS: A utility-first CSS framework for rapid UI development.<br/>
+
 Backend:
-Express.js: A web application framework for Node.js, providing a robust set of features.
-Database:
-MySQL: A relational database management system.
-Prisma: A modern database toolkit for Node.js and TypeScript, simplifying database access and operations.
+Express.js: A web application framework for Node.js, providing a robust set of features.<br/>
+
+Database:<br/>
+
+MySQL: A relational database management system.<br/>
+
+Prisma: A modern database toolkit for Node.js and TypeScript, simplifying database access and operations.<br/>
 
 
 
