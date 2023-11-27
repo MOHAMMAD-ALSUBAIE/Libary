@@ -2,7 +2,7 @@ Project Name: Libary
 
 Overview
 
-Libary is a web application that allows users to explore a curated collection of books sourced from Amazon via Kaggle. Users can view details about each book, select favorites. The project is built using React and Tailwind CSS for the frontend, Express.js for the backend, MySQL as the database, and Prisma to facilitate CRUD operations. User authentication and authorization ensure a personalized experience.
+Libary is a web application that allows users to explore a curated collection of books sourced from Amazon via Kaggle. Users can view details about each book, and select favorites. The project is built using React and Tailwind CSS for the frontend, Express.js for the backend, MySQL as the database, and Prisma to facilitate CRUD operations. User authentication and authorization ensure a personalized experience.
 
 Features
 
