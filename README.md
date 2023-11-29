@@ -31,6 +31,5 @@ Prisma: A modern database toolkit for Node.js and TypeScript, simplifying databa
 
 Acknowledgments
 
-Data sourced from Kaggle: Kaggle Datasets
-Inspired by the love for books and reading.
+Data sourced from Kaggle.
 Feel free to explore, and enjoy your Library  experience!
