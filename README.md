@@ -69,8 +69,8 @@ Download the installer directly through Node.js website: **[Node.js](https://nod
 ![image](https://github.com/MOHAMMAD-ALSUBAIE/Libary/assets/68867495/6a20de44-2605-4def-9fd1-60b21bf7b163)
 
 
-**start the server**
-`npm run tsc`
+#### **start the server**
+####  `npm run tsc`
 Acknowledgments
 
 Data sourced from Kaggle.
