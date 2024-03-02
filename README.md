@@ -60,7 +60,7 @@ Download the installer directly through Node.js website: **[Node.js](https://nod
 **change the name of envExample to .env**
 `All the instructions needed to configure the connection to your database can be found in the 'envExample'`
 
-**Migrate the migration folder to your database**
+**Migrate the migration folder to your database**</br>
 `npx prisma migrate dev`
 **Import the Books CSV file into the 'books' table in your database, which you can find inside the BooksCSV folder.**
 **Avoid adding the 'SBN' variable to the 'books' table**
