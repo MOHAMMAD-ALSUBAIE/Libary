@@ -54,14 +54,14 @@ Download the installer directly through Node.js website: **[Node.js](https://nod
 
 **navigate to repository**
 
-**`cd Backend`
+`cd Backend`</br>
 `npm install`
 
-####**change the name of envExample to .env**
+**change the name of envExample to .env**</br>
 `All the instructions needed to configure the connection to your database can be found in the 'envExample'`
 
 **Migrate the migration folder to your database**</br>
-####`npx prisma migrate dev`
+`npx prisma migrate dev`</br>
 **Import the Books CSV file into the 'books' table in your database, which you can find inside the BooksCSV folder.**
 **Avoid adding the 'SBN' variable to the 'books' table**
 ![image](https://github.com/MOHAMMAD-ALSUBAIE/Libary/assets/68867495/6a20de44-2605-4def-9fd1-60b21bf7b163)
