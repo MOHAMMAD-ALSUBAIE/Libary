@@ -27,8 +27,48 @@ MySQL: A relational database management system.<br/>
 
 Prisma: A modern database toolkit for Node.js and TypeScript, simplifying database access and operations.<br/>
 
+### **Prerequisites**
+**Node.js via Installer**
+
+Download the installer directly through Node.js website: **[Node.js](https://nodejs.org/en/download)**
+
+### **Setup**
+
+**clone the repository**
+
+`git clone https://github.com/MOHAMMAD-ALSUBAIE/Darb-AI.git`
+
+#### **client setup:**
+
+**navigate to repository**
+
+**install dependencies**
+
+`npm install`
+
+**start client**
+
+`npm run dev`
+
+#### **server setup:**
+
+**navigate to repository**
+
+`cd Backend`
+`npm install`
+
+**change the name of envExample to .env**
+`All the instructions needed to configure the connection to your database can be found in the 'envExample'`
+
+**Migrate the migration folder to your database**
+`npx prisma migrate dev`
+**Import the Books CSV file into the 'books' table in your database, which you can find inside the BooksCSV folder.**
+**Avoid adding the 'SBN' variable to the 'books' table**
+![image](https://github.com/MOHAMMAD-ALSUBAIE/Libary/assets/68867495/6a20de44-2605-4def-9fd1-60b21bf7b163)
 
 
+**start the server**
+`npm run tsc`
 Acknowledgments
 
 Data sourced from Kaggle.
