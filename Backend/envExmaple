@@ -4,4 +4,22 @@
 # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
 # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
 
-DATABASE_URL=""
+
+You now need to adjust the connection URL to point to your own database.
+
+The format of the connection URL for your database typically depends on the database you use. For MySQL, it looks as follows (the parts spelled all-uppercased are placeholders for your specific connection details):
+
+mysql://USER:PASSWORD@HOST:PORT/DATABASE
+
+Here's a short explanation of each component:
+
+    USER: The name of your database user
+    PASSWORD: The password for your database user
+    PORT: The port where your database server is running (typically 3306 for MySQL)
+    DATABASE: The name of the 
+
+
+As an example, for a MySQL database hosted on local device
+
+DATABASE_URL="mysql://root:password@localhost:3306/libary"
+
